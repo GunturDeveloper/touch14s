@@ -13,14 +13,12 @@
     <img src="logo.png" alt="Logo" class="logo">
       <a href="https://www.instagram.com/chemicevents?igsh=czA2MWM4eW9jY3A3" target="_blank" class="instagram-icon">
       <i class="fab fa-instagram"></i>
-      
     </a>
   </div>
   <div class="titles">
     <h1>Touch 14</h1>
     <h3>Try Out Chemicalistronic - SMK SMTI YOGYAKARTA</h3>
   </div>
-
   <div class="container">
       <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
       <div class="card-title">Hitung Mundur Waktu Pelaksanaan🎉</div>
@@ -34,31 +32,26 @@
       <p>Peserta mendaftar sendiri tanpa membawa teman.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSexUGPWtWsVUU2-fX1WG7IPsAl-F1NIV2hoeoXQZlAlztcnuw/viewform?usp=send_form" target="_blank">Mendaftar</a>
     </div>
-    
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
       <div class="card-title">Pendaftaran 2 Peserta</div>
       <p>Peserta membawa 1 teman.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSfahxqID08rBu9wa3Vtmb7hMrJTetMMU5KvxCOo9sleFFwEtw/viewform" target="_blank">Mendaftar</a>
     </div>
-    
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
       <div class="card-title">Pendaftaran 3 Peserta</div>
       <p>Peserta membawa 2 teman.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLScxWk4cmtJeKzboR5x_0qq0eD8iR6pYupjipqTh_C89fG4PIA/viewform" target="_blank">Mendaftar</a>
     </div>
-    
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
       <div class="card-title">Pendaftaran 4 Peserta</div>
       <p>Peserta membawa 3 teman.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSdXAsvriFrfHAE-cMtvuWkpzNISnCK9uGT9fELa4aGLs6w7TA/viewform?usp=send_form" target="_blank">Mendaftar</a>
     </div>
-    
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
       <div class="card-title">Pendaftaran 5 Peserta</div>
       <p>Peserta membawa 4 teman.</p>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_6mzGPzDj3AzOnilgx92d5ydvjKeHjPnADSUIDtH40HV2LQ/viewform?usp=send_form" target="_blank">Mendaftar</a>
     </div>
-    
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
       <div class="card-title">Contact Person Leny</div>
       <p>Untuk informasi lebih lanjut, hubungi Leny di <strong>0812-3456-7890</strong></p>
@@ -66,24 +59,15 @@
            <i class="fab fa-whatsapp"></i>
            Hubungi Leny</a>
     </div>
-    
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
       <div class="card-title">Contact Person Arif</div>
-      <p>Untuk informasi lebih lanjut, hubungi Arif di <strong>0812-9876-5432</strong></p>
-     
+      <p>Untuk informasi lebih lanjut, hubungi Arif di <strong>0812-9876-5432</strong></p>     
       <a class="whatsapp-icon" href="https://wa.me/6281542780426" target="_blank">
            <i class="fab fa-whatsapp"></i>
-           WhatsApp 
-      
-      </a>
-       
-      
-     
-    </div>
-     
-  </div>
- 
-  
+           WhatsApp       
+      </a>                  
+    </div>     
+  </div>  
    <footer >
     <p>Website Ini Dibuat Oleh OSIS CHEMICALISTRONIC SMK-SMTI YOGYAKARTA</p>
   </footer>
@@ -91,29 +75,29 @@
   <script>
     AOS.init();
     const targetDate = new Date("February 16, 2025 07:00:00").getTime();
-
     const countdownElement = document.getElementById("countdown");
-
-    // Update countdown setiap detik
     const interval = setInterval(function() {
       const currentTime = new Date().getTime();
       const remainingTime = targetDate - currentTime;
-
-      // Hitung hari, jam, menit, detik
       const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
       const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-
-      // Tampilkan hasil countdown
       countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-
-      // Jika waktu telah tercapai, berhenti menghitung mundur
       if (remainingTime <= 0) {
         clearInterval(interval);
         countdownElement.innerHTML = "Waktu telah tiba!";
       }
     }, 1000);
   </script>
+  <noscript>
+    <div class="container">
+      <div class="card">
+        <p class="timer-text>
+          Mohon aktifkan javascript di browser anda, atau beralih menggunakan browser lain.
+          </p>
+    </div>
+          </div>
+      </noscript>
 </body>
 </html>
