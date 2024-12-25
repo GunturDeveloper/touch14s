@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <title>Touch 14</title>
+  <noscript>
+    <div class="container">
+      <div class="cards">
+        <p class="timer-text">
+          Mohon aktifkan javascript di browser anda, atau beralih menggunakan browser lain.
+          </p>
+    </div>
+          </div>
+          </noscript>
+</head>
+<body>
+      <header class="app-bar" data-aos="fade" data-aos-duration="800">
+          <img src="logo.png" alt="">
+        
+        <button class="menu-btn" onclick="toggleDrawer()">☰</button>
+    </header>
+    <div id="drawer" class="drawer">
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Pendaftaran Touch14</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="dokumentasi.html">Dokumentasi</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay" onclick="toggleDrawer()"></div>    
+    
+    
+    <div class="container">
+        <div data-aos="fade-up" data-aos-duration="800" class="cardx">
+            <h3>Touch14</h3>
+            <br>
+            <p>Apa itu Touch14?</p>
+            <br>
+            <p>
+  TOUCH #14 (Try Out Chemicalistronic) merupakan acara tahunan yang diadakan oleh OSIS SMK SMTI Yogyakarta untuk siswa kelas 9 SMP di wilayah Yogyakarta dan sekitarnya. Event ini dirancang sebagai sarana try out untuk mempersiapkan peserta menghadapi ASPD (Asesmen Standar Pendidikan Daerah). Selain menguji kemampuan akademik, TOUCH juga dapat mengasah kemampuan mereka dalam mempersiapkan ASPD dan berkesempatan untuk mengenal lebih dekat SMK SMTI Yogyakarta.
+</p>
+<a href="index.html">Daftar Sekarang!</a>
+        </div>
+        
+       
+    </div>
+    
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+    function toggleDrawer() {
+        const drawer = document.getElementById('drawer');
+        const overlay = document.querySelector('.overlay');
+        drawer.classList.toggle('open');
+        overlay.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>

@@ -18,6 +18,22 @@
           </noscript>
 </head>
 <body>
+      <header class="app-bar" data-aos="fade" data-aos-duration="800">
+          <img src="logo.png" alt="">
+        
+        <button class="menu-btn" onclick="toggleDrawer()">☰</button>
+    </header>
+    <div id="drawer" class="drawer">
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Pendaftaran Touch14</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="dokumentasi.html">Dokumentasi</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+    <div class="overlay" onclick="toggleDrawer()"></div>    
   <div class="logo-container" data-aos="fade" data-aos-duration="800" data-aos-delay="10">
     <img src="logo.png" alt="Logo" class="logo">
       <a href="https://www.instagram.com/chemicevents?igsh=czA2MWM4eW9jY3A3" target="_blank" class="instagram-icon">
@@ -42,7 +58,7 @@
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="75">
       <div class="card-title">Pendaftaran 1 Peserta</div>
       <p>Peserta mendaftar sendiri tanpa membawa teman.</p>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSexUGPWtWsVUU2-fX1WG7IPsAl-F1NIV2hoeoXQZlAlztcnuw/viewform?usp=send_form" target="_blank">Mendaftar</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSexUGPWtWsVUU2-fX1WG7IPsAl-F1NIV2hoeoXQZlAlztcnuw/viewform?usp=send_form" target="_blank">Mendaftar Sekarang!</a>
     </div>
     <div class="card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
       <div class="card-title">Pendaftaran 2 Peserta</div>
@@ -101,6 +117,12 @@
         countdownElement.innerHTML = "Waktu telah berakhir!🎉";
       }
     }, 1000);
+    function toggleDrawer() {
+        const drawer = document.getElementById('drawer');
+        const overlay = document.querySelector('.overlay');
+        drawer.classList.toggle('open');
+        overlay.classList.toggle('open');
+    }
   </script>
 </body>
 </html>

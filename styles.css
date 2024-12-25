@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;
+  background: url("bg.jpg");
   color: #e0e0e0;
   display: flex;
   flex-direction: column;
@@ -23,6 +23,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
   padding: 10px;
   text-decoration: none;
+  margin-top: 120px;
 }
 
 .logo-container a {
@@ -53,15 +54,71 @@ body {
   transition: all 0.5s linear;
 }
 
+.cardx {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  margin-top: 60px;
+  font-size: 16px;
+  text-align: center;
+}
+.cardx img {
+    width: 90%;
+    height: auto;
+    border-radius: 16px;
+}
+.cardx a {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #00a66c;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.cardxs {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  margin-top: 80px;
+  font-size: 16px;
+  text-align: center;
+  
+}
+
+.cardxs img {
+  width: 75%;
+  height: auto;
+  border-radius: 16px;
+  margin-top: 12px;
+  transition: all 0.5s ease-in-out;
+  
+}
+.cardxs img:hover {
+    transform: scale(1.1);
+}
+.igx {
+    scroll-behavior: auto;
+  max-height: 500px;
+  overflow-y: auto; 
+  
+  
+}
 .cards {
   background: #1e1e1e;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  width: 100%;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  
 }
 
 .card-title {
@@ -88,6 +145,7 @@ body {
 
 .titles {
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -98,6 +156,7 @@ footer {
   height: auto;
   text-align: center;
   color: #fff;
+  overflow:auto;
 }
 
 .timer {
@@ -114,4 +173,85 @@ footer {
 .timer-text {
   text-align: center;
   margin-bottom: 10px;
-    }
+}
+.app-bar {
+    background-color: #121212;
+    color: white;
+    padding: 5px 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    z-index: 1;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.6);
+}
+.app-bar img {
+    width: 64px;
+    height: 64px;
+    transform: scale(2);
+}
+
+.title {
+    font-size: 24px;
+    margin: 0;
+}
+
+.menu-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #121212;
+    transition: left 0.3s;
+    padding: 20px;
+    z-index: 999;
+}
+
+.drawer.open {
+    left: 0;
+}
+
+.nav .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-bottom: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    color: #f0f0f0;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+.overlay.open {
+    display: block;
+}
