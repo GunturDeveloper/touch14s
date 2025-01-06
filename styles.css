@@ -255,3 +255,35 @@ footer {
 .overlay.open {
     display: block;
 }
+
+.sponsor-container {
+  width: 300px;
+  margin: 14px auto;
+  text-align: center;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  
+  padding: 2px;
+  text-decoration: none;
+  margin-top: 12px;
+}
+
+.img-sponsor {
+  width: 80%;
+  height: auto;
+}
+
+/* Responsif untuk layar lebih besar (Desktop) */
+@media screen and (min-width: 768px) {
+  .sponsor-container {
+    width: 400px; /* Atur ulang lebar untuk desktop */
+    margin-top: 20px; /* Sesuaikan margin atas jika perlu */
+  }
+}
+
+/* Responsif untuk layar sangat besar (Desktop Lebar) */
+@media screen and (min-width: 1200px) {
+  .sponsor-container {
+    width: 500px; /* Lebar yang lebih besar pada layar lebar */
+  }
+}
